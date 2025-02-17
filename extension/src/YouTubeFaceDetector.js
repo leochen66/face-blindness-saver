@@ -9,7 +9,6 @@ class YouTubeFaceDetector {
     this.withBoxes = true;
     this.withLandmarks = false;
     this.faceMatcher = null;
-    this.currentModel = "ssd";
     this.init();
   }
 
@@ -32,10 +31,7 @@ class YouTubeFaceDetector {
       }
       this.video = video;
 
-      if (!this.video.parentElement) {
-        throw new Error("Video container not found");
-      }
-
+      this.setupVideoEvents();
       await this.setupCanvas();
       await this.loadModels();
       await this.setupFaceMatcher();
@@ -52,6 +48,19 @@ class YouTubeFaceDetector {
       console.error("Initialization error:", error);
       await this.handleInitError();
     }
+  }
+
+  setupVideoEvents() {
+    if (!this.video) {
+      return;
+    }
+
+    this.video.addEventListener("seeked", () => {
+      if (this.isInitialized) {
+        this.cleanup();
+        this.init();
+      }
+    });
   }
 
   async setupFaceMatcher() {
