@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Face Blindness Saver",
+  "version": "0.1",
+  "description": "Detect and identify celebrity faces in YouTube videos",
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": [
+        "lib/face-api.min.js",
+        "src/YouTubePageController.js",
+        "src/YouTubeFaceDetector.js",
+        "src/content.js"
+      ],
+      "css": ["static/popup.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "model/face-api/*",
+        "model/face-recognition/face_recognition.json"
+      ],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "static/popup.html"
+  },
+  "icons": {
+    "16": "icons/logo_16.png",
+    "32": "icons/logo_32.png",
+    "48": "icons/logo_48.png",
+    "128": "icons/logo_128.png"
+  }
+}

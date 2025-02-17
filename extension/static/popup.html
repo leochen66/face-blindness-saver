@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="/icons/logo_48.png" alt="Logo" class="logo" />
+        <h1 class="title">YouTube Face Blindness Saver</h1>
+      </div>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggleSwitch" />
+          <span class="slider"></span>
+        </label>
+        <div class="status" id="status">Detection is OFF</div>
+      </div>
+      <div class="color-picker-container">
+        <label class="color-label">Select Box Color:</label>
+        <div class="color-options">
+          <button
+            class="color-btn"
+            data-color="#FF0000"
+            style="background-color: #ff0000"
+          ></button>
+          <button
+            class="color-btn"
+            data-color="#00FF00"
+            style="background-color: #00ff00"
+          ></button>
+          <button
+            class="color-btn"
+            data-color="#0000FF"
+            style="background-color: #0000ff"
+          ></button>
+          <button
+            class="color-btn"
+            data-color="#FFFF00"
+            style="background-color: #ffff00"
+          ></button>
+          <button
+            class="color-btn"
+            data-color="#FF00FF"
+            style="background-color: #ff00ff"
+          ></button>
+          <button
+            class="color-btn"
+            data-color="#000000"
+            style="background-color: #000000"
+          ></button>
+          <button
+            class="color-btn white-btn"
+            data-color="#FFFFFF"
+            style="background-color: #ffffff"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="../src/popup.js"></script>
+  </body>
+</html>
