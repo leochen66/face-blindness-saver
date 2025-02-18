@@ -14,14 +14,16 @@ YouTube Face Blindness Saver is an innovative Chrome extension that brings real-
 - **Lightweight**: Minimal impact on your browsing experience.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://i.imgur.com/hCuJZF1.png" alt="Demo Screenshot 1" width="50%"/>
-    <img src="https://i.imgur.com/HZofYMs.png" alt="Demo Screenshot 2" width="50%"/>
+    <img src="https://i.imgur.com/hCuJZF1.png" alt="Demo Screenshot 1" width="45%"/>
+    <img src="https://i.imgur.com/HZofYMs.png" alt="Demo Screenshot 2" width="45%"/>
 </div>
 
 ## 🚀 Quick Demo
 
 1. Install the demo version on [Chrome Web Store]()
 2. Open your favorite "Friends" TV show episode on YouTube
+
+![hippo](https://imgur.com/Gy3DqQu.gif)
 
 **Note**: This demo version focuses specifically on the "Friends" dataset.
 
@@ -34,7 +36,7 @@ There are two parts in this project:
 
 The training-script trains the face recognition model that the Google Chrome extension needs.
 
-<img src="https://i.imgur.com/pHPMhc3.png" alt="Local Development Screenshot" width="100%"/>
+<img src="https://i.imgur.com/pHPMhc3.png" alt="Local Development Screenshot" width="80%"/>
 
 ## 💻 How to Run Source Code Locally
 
