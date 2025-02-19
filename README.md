@@ -20,7 +20,7 @@ YouTube Face Blindness Saver is an innovative Chrome extension that brings real-
 
 ## 🚀 Quick Demo
 
-1. Install the demo version on [Chrome Web Store]()
+1. Install the demo version on [Chrome Web Store](https://chromewebstore.google.com/detail/youtube-face-blindness-sa/daomlfmcnaaeckhcfcgfgiiablicpcnp)
 2. Open your favorite "Friends" TV show episode on YouTube
 
 ![hippo](https://imgur.com/Gy3DqQu.gif)

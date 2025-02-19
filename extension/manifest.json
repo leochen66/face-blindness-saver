@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Face Blindness Saver",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Detect and identify celebrity faces in YouTube videos",
   "permissions": ["activeTab", "storage"],
   "content_scripts": [
