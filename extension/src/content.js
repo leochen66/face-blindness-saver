@@ -20,7 +20,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 chrome.storage.local.get("detectionEnabled", (result) => {
-  if (result.detectionEnabled) {
+  if (result.detectionEnabled === undefined) {
+    chrome.storage.local.set({ detectionEnabled: true }, () => {
+      detectorController = new YouTubePageController();
+    });
+  } else if (result.detectionEnabled) {
     detectorController = new YouTubePageController();
     console.log("Detection started automatically on page load.");
   } else {
